@@ -1,3 +1,6 @@
+from typing_extensions import NotRequired
+
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -8,7 +11,7 @@ Parameters:
     Type: String
     Default: PRIVATE
   VpcEndpointId:
-    Type: String
+    Type: NotRequired
 
 Resources:
   MyApi:
