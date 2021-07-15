@@ -19,3 +19,11 @@ Resources:
         Type: !Ref EndpointConfigType
         VPCEndpointIds:
           - !Ref VpcEndpointId
+  VPC:
+    Type: AWS::Serverless::VPC
+    Properties:
+      StageName: Prod
+      EndpointConfiguration:
+        Type: !Ref EndpointConfigType
+        VPCEndpointIds:
+          - !Ref VpcEndpointId
