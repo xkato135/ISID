@@ -2,7 +2,7 @@ version: 0.0
 os: Amaon_linux
 files:
   - source: /index.html
-    destination: /var/www/html/
+    destination: /var/www/laravel
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
